@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href='css/animated_menu.css'>
+  <link rel="stylesheet" href='css/carousel.css'>
+  <link rel="stylesheet" href='css/body.css'>
+  <link rel="stylesheet" href='css/attention.css'>
+  
+  <link rel="shortcut icon" href='assets/berry_ico.png' type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+
+  <title>BERRY PICKER |  YOUR PIECE OF MIND SPACE</title>
+</head>
+<body>
+  <nav>
+    <div class="nav_wrapper">
+      <div class="logo">
+        <a href="#"><img id="logo" src="assets/b_p_logo.png" alt="Logo"></a>
+      </div>
+      <div class="toggler">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav_links">
+        <li><a href="html/field.html"><b>Анимированное поле формы</b></a></li>
+        <li>
+          
+          </li>
+        <li><a href="#"><b>Your<b style="color: #68dbdb00;">_</b>Space</b></a></li>          
+      </ul>
+    </div>
+    
+  </nav>
+
+<div class="attention"> <!--ОБЪЯВЛЕНИЕ. Применяются стили из файла attention.css-->  
+  <div class="ribbon">   <!--Ленточка-->
+   <span class="ribbon2"><strong>С<br>Р<br>О<br>Ч<br>Н<br>О<br>!</strong></span>
+  </div>
+  <div class="attention-text"><strong>Постоянно открыта</strong></div>
+  <div class="attention-text"><strong>ВАКАНСИЯ</strong></div>
+  <div class="attention-text"><strong>смотрителя львов в зоопарке!</strong></div>
+  <div class="attention-text"><a class="btn_link" href="html/zoo_vacancy.html" target="_blank"><strong id="attention-link">ПОЛУЧИТЬ РАБОТУ</a></strong></div>          
+</div>
+
+  <div class="carousel_wrapper">
+    <ul class="carousel">
+      <li><img class="carousel_item" src="assets/cr_2.jpg" alt=""></li>
+      <li><img class="carousel_item" src="assets/cr_2.jpg" alt=""></li>
+      <li><img class="carousel_item" src="assets/cr_3.jpg" alt=""></li>
+    </ul>
+  </div>
+  
+<div class="body_wrapper">
+  <!--<div class="media-adjuster"></div>-->
+    <div class="body_column">
+      <div class="text"><h3>Regestring NEW user</h3>
+    </div>
+      <div class="button_box"><button class="btn" type="submit" value="submit"><a class="btn_link" href="html/new_regestry.html" target="_blank">START</a></button></div>
+  </div>
+ 
+  <div class="body_column">
+     <div class="text"><h3>К Сайдбару</h3> 
+     </div>
+     <div class="button_box"><button class="btn" type="submit" value="submit"><a class="btn_link" href="html/user_login.html" target="_blank">START</a></button></div>
+  </div>
+
+   <div class="body_column">
+    <div class="text"><h3>К модальному окну</h3> 
+    </div>
+    <div class="button_box"><button class="btn" type="submit" value="submit" ><a class="btn_link" href="#ModalWindow">START</a></button></div>
+   
+</div>
+    <div id="ModalWindow" class="Modal">
+        <div class="Modal_Body">        
+          <div class="main_login">
+            <div class="form_header"><h3>User Login</h3></div>
+            <form action="html/user_dashboard.html" target="_new" class="login" method="POST" id="log_in">
+              <label>User name / e-mail</label>
+              <p><input id="e-mail" name="e-mail" type="e-mail" size=40 placeholder="your_mail@domain.com" title="Enter Your e-mail adress" required></p>
+              <label>Password</label>
+              <p><input id="password" name="password" type="text" size=40 placeholder="Your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></p>
+              <p><input class="SendButton" type="submit" value="Log In"> <a class="ResetButton" #id="ModalResetButton" href="#close" title="Закрыть">Cancel</a></p>         
+            </form>     
+          </div>        
+        </div>      
+    </div>
+</div>
+ <div class="footer">
+  <div class="text"><h4>Ссылки на ДЗ-4</h4>
+    <p><a href="html/zoo_vacancy.html" target="_blank">ДЗ-4.1 Анкета</a></p>
+    <p><a href="html/thank_you.html" target="_blank">ДЗ-4.1/2 Thanks page</a></p>
+    <p><a href="html/field.html" target="_blank">ДЗ-4.2 Анимированное поле анкеты</a></p>
+    <p><a href="html/sidebar_on_frame.html" target="_blank">ДЗ-4.3 Sidebar on @keyframes</a></p>
+  </div>
+  <div class="text"><h4>News</h4>
+    <p><a href="#">Our News</a></p>
+    <p><a href="#">Industry<b style="color: #68dbdb00;">_</b>News</a></p> 
+  </div>
+  <div class="text"><h4>Contacts</h4>
+    <p><a href="#">Support</a></p>
+    <p><a href="#">Forum</a></p> 
+  </div>
+  <div class="text"><h4>Social Media</h4>
+    <p><a href="#">Facebook</a></p>
+    <p><a href="#">Tweeter</a></p>
+  </div>
+ </div>
+</body>
+
+
+
+
+
+<script src="js/animated_menu.js"></script>
+
+</html>
+
+
+<!--<select name="gender" class="input_field" aria-placeholder="LINKS">
+            <option value=""><b>Links</b></a></option>                
+            <option value="Sidebar on @FRAMES"><a href="html/sidebar_on_frame.html">B</a></option>
+            <option value="Zoo Vacancy"><a href="html/zoo_vacancy.html"></a></option>
+           </select>-->

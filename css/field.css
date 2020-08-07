@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.wrapper{
+  width: 100%;
+  height: auto;
+  min-height: 100rem;
+  display: flex;
+  flex-direction: column;  
+  background-color: whitesmoke;
+  background-size: cover;  
+}
+
+.application_body{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.side_img{
+  height: 20rem;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  
+  
+}
+.img_left{
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  
+}
+.img_right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+.application_form{
+  width: 60rem;
+  height: 85rem;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+.the_field{
+  width: 100%;
+  display: flex;
+  margin: 5rem;
+  padding: 5rem;
+ 
+  align-items: center;
+}
+
+@media screen and (max-width: 768px){
+  .side_img{
+    display: none;
+  }
+}
+
+
+input[type="text"]{
+  width: 100%;
+  border: none;
+  border-bottom: 0.2rem solid lightslategray;
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: .5rem;  
+  opacity: 0.5;
+}
+input[type="text"]+label{
+  font-size: 1.5rem;
+  margin-top: -1.9rem;
+  margin-left: 3rem;
+  display: block;
+  pointer-events: none;
+ 
+}
+input[type="text"]+label::before{
+  content: attr(placeholder);  
+  color:red; 
+  font-weight: 800;
+  display: inline-block; 
+  transition: all .3s ease-in-out;
+}
+input[type="text"]:focus{
+  border: 0.2rem solid rgb(15, 14, 14);
+}
+input[type="text"]:focus+label::before{
+  color: rgb(27, 29, 31);
+  transform: translate(0, -1.8rem) scale(0.9, 0.9);
+}
+
+
+.footer{
+  width: 100%;
+  padding: 7rem 0rem;
+  height: 25rem;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgb(43, 59, 65);
+  line-height: 4rem;
+}
+
+/*.footer{
+  width: 100%;
+  padding: 7rem 0rem;
+  height: 25rem;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(34,193,195);
+  background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  line-height: 4rem;
+}
+
+
+
+  
+  
